@@ -6,6 +6,7 @@
 
 *{
     font-family: 'League Spartan', sans-serif;
+    
 }
 body{
     background-color: var(--primary-color);
@@ -15,7 +16,8 @@ body{
 }
 
 nav .navbar {
-    margin-top: 32px;
+    padding-top: 10px;
+    /* background-color: #85E2FF; */
 }
 
 nav .navbar li {
@@ -26,6 +28,7 @@ nav .navbar li {
 }
 nav .navbar .list{
     padding-right: 90px;
+    padding-top: 0.5rem;
 }
 
 nav .navbar a{
@@ -40,18 +43,22 @@ nav .navbar h1 {
     margin-right: auto;
     font-weight: 500;
     font-size: 40px;
-    padding-left: 17rem;
+    padding-left: 10%;
 }
 
-.greetings{
-    margin-top: 200px;
-    margin-left: 120px;
+.greetings{ 
+    padding-top: 4rem;
     display: flex;
+    padding-right: 20px;
+}
+
+.greetings .content{
+    padding-left: 12%;
 }
 
 .greetings h1 {
     font-weight: 900;
-    font-size: 76px;
+    font-size: 55px;
 }
 
 .greetings h1 span{
@@ -86,19 +93,26 @@ nav .navbar h1 {
 }
 
 .greetings .logo{
-    font-size: 50px;
+    font-size: 30px;
     margin-top: 2rem;
 }
 
-
-.greetings img{
-border-radius: 360px;
-    max-height: 35rem;
-    max-width: 35rem;
-    position: absolute;
-    margin-left: 60rem;
+.greetings .gambar{
+    margin-left: 22%;
 }
 
-.greetings .wrapper{
-    position: relative;
+.greetings .gambar .img{
+    border-radius: 50%;
+    max-height: 22rem;
+    max-width: 22rem;    
+}
+
+.greetings .lingkaran{
+    width: 23rem;
+    height: 23rem;
+    border: 6px solid white;
+    border-radius: 50%;
+    position: absolute;
+    /* z-index: 1; */
+    margin-left: 50%;
 }
