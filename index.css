@@ -12,6 +12,7 @@ body{
     background-color: var(--primary-color);
    padding: 0;
    margin:0;
+   /* overflow: hidden; */
 }
 
 nav .navbar {
@@ -49,6 +50,7 @@ nav .navbar h1 {
     padding-top: 4rem;
     display: flex;
     padding-right: 20px;
+    overflow: hidden;
 }
 
 .greetings .content{
@@ -63,6 +65,44 @@ nav .navbar h1 {
 
 .greetings h1 span{
     color: #85E2FF;
+}
+
+.konten-kata{
+    width: 100%;
+   overflow: hidden;
+
+}
+
+.konten-kata .kata{
+    position:relative;
+    color: #85E2FF;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.konten-kata .kata.first-text{
+    color: #fff;
+}
+
+.konten-kata .kata.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:var(--primary-color);
+    border-left:2px solid #4070f4 ;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60%{
+        left: calc(100% + 1px);
+    }
+    100%{
+        left: 0%;
+    }
 }
 
 .btn1 {
