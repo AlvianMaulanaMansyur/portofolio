@@ -26,6 +26,13 @@ nav .navbar li {
     font-size: 16px;
     margin-right: 30px;
 }
+
+nav .navbar li:hover{
+    border-bottom: solid white 2px;
+    padding-bottom: 1rem;
+    
+}
+
 nav .navbar .list{
     padding-right: 90px;
     padding-top: 0.5rem;
