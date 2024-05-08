@@ -483,10 +483,12 @@ footer {
     }
 
     .portofolio {
-        height: 140vh;
+        height: 160vh;
         width: 100%;
         background-color: #E8E8E8;
     }
+
+   
 
     .portofolio .teks {
         padding-left: 15rem;
