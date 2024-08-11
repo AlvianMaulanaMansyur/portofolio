@@ -1,18 +1,19 @@
-:root{
+:root {
     font-family: 'League Spartan', sans-serif;
     --primary-color: #070F2B;
-    --secondary-color : #E8E8E8;
+    --secondary-color: #E8E8E8;
 }
 
-*{
+* {
     font-family: 'League Spartan', sans-serif;
-    
+
 }
-body{
+
+body {
     background-color: var(--primary-color);
-   padding: 0;
-   margin:0;
-   /* overflow: hidden; */
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
 }
 
 nav .navbar {
@@ -26,17 +27,24 @@ nav .navbar li {
     font-size: 16px;
     margin-right: 30px;
 }
-nav .navbar .list{
+
+nav .navbar li:hover {
+    border-bottom: solid white 2px;
+    padding-bottom: 1rem;
+
+}
+
+nav .navbar .list {
     padding-right: 90px;
     padding-top: 0.5rem;
 }
 
-nav .navbar a{
+nav .navbar a {
     text-decoration: none;
     color: #fff;
     text-align: center;
     margin: 15px;
-    
+
 }
 
 nav .navbar h1 {
@@ -46,14 +54,14 @@ nav .navbar h1 {
     padding-left: 10%;
 }
 
-.greetings{ 
+.greetings {
     padding-top: 4rem;
     display: flex;
     padding-right: 20px;
     overflow: hidden;
 }
 
-.greetings .content{
+.greetings .content {
     padding-left: 12%;
     /* background-color: #0ccff0; */
 }
@@ -63,44 +71,47 @@ nav .navbar h1 {
     font-size: 55px;
 }
 
-.greetings h1 span{
+.greetings h1 span {
     color: #85E2FF;
 }
 
-.konten-kata{
+.konten-kata {
     width: 100%;
-   overflow: hidden;
+    overflow: hidden;
 
 }
 
-.konten-kata .kata{
-    position:relative;
+.konten-kata .kata {
+    position: relative;
     color: #85E2FF;
     font-size: 30px;
     font-weight: 700;
 }
 
-.konten-kata .kata.first-text{
+.konten-kata .kata.first-text {
     color: #fff;
 }
 
-.konten-kata .kata.sec-text:before{
+.konten-kata .kata.sec-text:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color:var(--primary-color);
-    border-left:2px solid #4070f4 ;
+    background-color: var(--primary-color);
+    border-left: 2px solid #4070f4;
     animation: animate 4s steps(12) infinite;
 }
 
 @keyframes animate {
-    40%, 60%{
+
+    40%,
+    60% {
         left: calc(100% + 1px);
     }
-    100%{
+
+    100% {
         left: 0%;
     }
 }
@@ -112,12 +123,13 @@ nav .navbar h1 {
     border-radius: 10px;
 }
 
-.btn1:hover{
+.btn1:hover {
     color: black;
     background-color: #85E2FF;
 
 }
- .btn2 {
+
+.btn2 {
     color: black;
     background-color: #fff;
     font-weight: 700;
@@ -125,28 +137,28 @@ nav .navbar h1 {
     border-radius: 10px;
 }
 
-.btn2:hover{
+.btn2:hover {
     color: black;
     background-color: #85E2FF;
 
 }
 
-.greetings .logo{
+.greetings .logo {
     font-size: 30px;
     margin-top: 2rem;
 }
 
-.greetings .gambar{
+.greetings .gambar {
     margin-left: 22%;
 }
 
-.greetings .gambar .img{
+.greetings .gambar .img {
     border-radius: 50%;
     max-height: 22rem;
-    max-width: 22rem;    
+    max-width: 22rem;
 }
 
-.greetings .lingkaran{
+.greetings .lingkaran {
     width: 23rem;
     height: 23rem;
     border: 6px solid white;
@@ -157,7 +169,7 @@ nav .navbar h1 {
 }
 
 .profile {
-    position:relative ;
+    position: relative;
     width: 400px;
     height: 400px;
     background-color: black;
@@ -166,29 +178,30 @@ nav .navbar h1 {
     margin-left: 22%;
 }
 
-.profile::before{
+.profile::before {
     content: '';
     position: absolute;
     inset: -10px 110px;
-    background: linear-gradient(315deg, #0ccff0, #d400d4);    
+    background: linear-gradient(315deg, #0ccff0, #d400d4);
     transition: 0.5s;
     animation: animasi 4s linear infinite;
 }
 
 .profile:hover::before {
-    inset:-20px 0px;
+    inset: -20px 0px;
 }
 
 @keyframes animasi {
     0% {
         transform: rotate(0deg);
     }
-    0%{
+
+    0% {
         transform: rotate(360deg);
     }
 }
 
-.profile::after{
+.profile::after {
     content: '';
     position: absolute;
     inset: 6px;
@@ -196,16 +209,17 @@ nav .navbar h1 {
     border-radius: 50%;
     z-index: 1;
 }
-.border-img{
+
+.border-img {
     position: absolute;
     inset: 20px;
     border: solid 6px;
     z-index: 3;
-    border-radius: 50% ;
+    border-radius: 50%;
     overflow: hidden;
 }
 
-.border-img img{
+.border-img img {
     position: absolute;
     top: 0;
     left: 0;
@@ -223,71 +237,61 @@ nav .navbar h1 {
     flex-wrap: wrap;
 }
 
-.about .about-pict{
-    position: relative;
-    /* border: solid 2px; */    
-    border-radius: 25% ;
+.about .about-pict {
+    position: absolute;
+    /* border: solid 2px; */
+    border-radius: 120px;
     overflow: hidden;
-    width: 23rem;
-    height: 23rem;
-    margin-left: 9rem;
+    height: 26rem;
+    width: 26rem;
+    margin-left: 7rem;
     margin-top: 10%;
-  
-
-
 }
-.about img{
-   position: absolute;
-   height: 23rem;
-   width: 30rem;
-   object-fit: cover;
-    object-position: -2rem;
-   /* margin-right:10rem; */
-   
-}
-.about .container{
-    width: 50%;
-    height: auto;
-    
-    /* margin-left: 45%; */
-    padding-top: 3rem;
+
+.about .container {
+    width: 20%;
+    margin-left: 0;
+    justify-content: center;
 
 }
 
+.about img {
+    position: absolute;
+    height: 130%;
+    width: 26rem;
+    object-fit: cover;
+}
 
-/* .text{
+.text {
     margin-top: 4%;
     margin-left: 40%;
-    margin-right:5%;
-}    */
+    margin-right: 5%;
+}
 
- .text h1{
+.text h1 {
     font-weight: 700;
     font-size: 3rem;
-    width: 50%;
 }
 
-
-.text h5{
-   width: 50%;
+.text h5 {
+    margin-left: 4%;
 }
 
-.text h4{
+.text h4 {
     line-height: 2;
-    padding-left: 10%;
-    padding-right: 10%;
 }
-.about a{
-   margin-left: 22px;
+
+.about a {
+    margin-left: 22px;
     font-size: 2.5rem;
 }
 
-.about .button{
-    margin-top:4rem ;
-    margin-left: 10%;
+.about .button {
+    margin-top: 4rem;
 }
-.about button{
-    margin-bottom:20px ;
+
+.about button {
+    margin-bottom: 20px;
 }
 
 .simple-icons--codeigniter {
@@ -304,85 +308,86 @@ nav .navbar h1 {
     mask-size: 100% 100%;
     color: #fff;
 
-  }
+}
 
-  .logo-tect i{
+.logo-tect i {
     font-size: 4rem;
-  }
+}
 
   .portofolio{
-    height:130vh;
+    height: 90vh;
     width: 100%;
     background-color: #E8E8E8;
-  }
+}
 
-  .portofolio .teks{
+.portofolio .teks {
     padding-left: 19rem;
     padding-top: 8rem;
-  }
+}
 
-  .portofolio h1{
+.portofolio h1 {
     font-weight: 700;
     font-size: 3rem;
-  }
+}
 
- .project img{
+.project img {
     width: 30%;
     height: 30%;
     margin-left: 20%;
- }
+}
 
- .project .detail {
+.project .detail {
     /* background-color: #070F2B; */
     margin-left: 9rem;
     margin-right: 20%;
- }
+}
 
-.detail p{
+.detail p {
     font-size: 20px;
     font-weight: 500;
     line-height: 1rem;
     margin-left: 30px;
- }
+}
 
- .contact{
-    
+.contact {
+
     padding-top: 7rem;
- }
- 
- .contact h1, .contact h5 {
+}
+
+.contact h1,
+.contact h5 {
     font-weight: 700;
- }
+}
 
- .contact i{
-  
+.contact i {
+
     font-size: 3rem;
- }
+}
 
- .contact .detail{
+.contact .detail {
     margin-top: 9rem;
     padding-left: 20%;
     /* background-color:  #0ccff0; */
- }
+}
 
- .contact button{
+.contact button {
     margin-left: 13rem;
- }
+}
 
- .contact a{
+.contact a {
     margin-left: 30px;
-    
- }
+
+}
 
 
- footer{
+footer {
     background-color: #fff;
     margin-top: 17rem;
-    padding-top: 10px ;
-    padding-bottom: 1px ;
- }
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
 
-@media  (min-width: 1025px) and (max-width:1400px) {
+@media (min-width: 1025px) and (max-width:1400px) {
     nav .navbar h1 {
         margin-right: auto;
         font-weight: 600;
@@ -391,7 +396,7 @@ nav .navbar h1 {
     }
 
     .profile {
-        position:relative ;
+        position: relative;
         width: 320px;
         height: 320px;
         background-color: black;
@@ -422,46 +427,42 @@ nav .navbar h1 {
         flex-wrap: wrap;
     }
 
-    .about .about-pict{
-        position: relative;
-        /* border: solid 2px; */    
-        border-radius: 120px ;
+    .about .about-pict {
+        /* position: absolute; */
+        /* border: solid 2px; */
+        border-radius: 120px;
         overflow: hidden;
         height: 19rem;
         width: 19rem;
         margin-left: 7rem;
-        margin-top: 15rem;
-     
+        margin-top: 10%;
     }
 
-    .about img{
-        width: 22rem;
+    .about img {
+        width: 20rem;
     }
 
-    .about .text{
-        padding-top: 10rem;
-    }
-    .text h1{
+    .text h1 {
         font-weight: 700;
         font-size: 2.5rem;
         margin-left: 0.5rem;
     }
 
-    .text h4{
+    .text h4 {
         font-size: 1.1rem;
     }
 
-    .about a{
+    .about a {
         margin-left: 20px;
-         font-size: 2rem;
-     }
+        font-size: 2rem;
+    }
 
-     
-     .about .button{
-         margin-top:1rem ;
-     }
 
-     .simple-icons--codeigniter {
+    .about .button {
+        margin-top: 1rem;
+    }
+
+    .simple-icons--codeigniter {
         display: inline-block;
         width: 3em;
         height: 3em;
@@ -475,215 +476,66 @@ nav .navbar h1 {
         mask-size: 100% 100%;
         color: #fff;
         margin-left: 15px;
-      }
-    
-      .logo-tect i{
+    }
+
+    .logo-tect i {
         font-size: 3rem;
-      }
-
-      .portofolio{
-        height:200vh;
-        width: 100%;
-        background-color: #E8E8E8;
-      }
-    
-      .portofolio .teks{
-        padding-left: 15rem;
-        padding-top: 4rem;
-      }
-    
-      .portofolio h1{
-        font-weight: 600;
-        font-size: 2.5rem;
-      } 
-      
-      .project img{
-        width: 30%;
-        height: 30%;
-        margin-left: 15%;
-     }
-    
-     .project .detail {
-        /* background-color: #070F2B; */
-        margin-left: 8rem;
-        margin-right: 15%;
-     }
-    
-    .detail p{
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.5rem;
-        margin-left: 30px;
-     }
-
-     .detail .tombol{
-        margin-left:2.5rem ;
-     }
-
-     .contact .detail{
-        margin-top: 7rem;
-        padding-left: 11%;
-        /* background-color:  #0ccff0; */
-     }
-
-     footer{
-        margin-top: 12rem;
-     }
-}
-
-@media (min-width: 500px) and (max-width:1025px){
-    nav .navbar h1 {
-        margin-right: auto;
-        font-weight: 600;
-        font-size: 25px;
-        padding-left: 10%;
     }
-
-    .profile {
-     
-        /* position:relative ; */
-        width: 250px;
-        height: 250px;
-        background-color: black;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-bottom: 1rem;
-        margin-right: 30%;
-
-    }
-
-    .greetings{
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-    .greetings h1 {
-        font-weight: 900;
-        font-size: 50px;
-
-    }
-
-    nav .navbar li {
-        display: inline;
-        font-weight: 600;
-        font-size: 12px;
-        margin-right: 30px;
-    }
-
-    .about {
-        background-color: #E8E8E8;
-        height: 100vh;
-        width: 100%;
-        margin-top: 16%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .about .about-pict{
-        position: relative;
-        /* border: solid 2px; */    
-        border-radius: 120px ;
-        overflow: hidden;
-        height: 19rem;
-        width: 19rem;
-        margin-left: 7rem;
-        margin-top: 15rem;
-     
-    }
-
-    .about img{
-        width: 22rem;
-    }
-
-    .about .text{
-        padding-top: 10rem;
-    }
-    .text h1{
-        font-weight: 700;
-        font-size: 2.5rem;
-        margin-left: 0.5rem;
-    }
-
-    .text h4{
-        font-size: 1.1rem;
-    }
-
-    .about a{
-        margin-left: 20px;
-         font-size: 2rem;
-     }
-
-     
-     .about .button{
-         margin-top:1rem ;
-     }
-
-     .simple-icons--codeigniter {
-        display: inline-block;
-        width: 3em;
-        height: 3em;
-        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M11.466 0c.88 1.423-.28 3.306-1.207 4.358c-.899 1.02-1.992 1.873-2.985 2.8c-1.066.996-2.091 2.044-2.967 3.213c-1.753 2.339-2.827 5.28-2.038 8.199c.788 2.916 3.314 4.772 6.167 5.429c-1.44-.622-2.786-2.203-2.79-3.82c-.003-1.765 1.115-3.262 2.505-4.246c-.167.632-.258 1.21.155 1.774a1.68 1.68 0 0 0 1.696.642c1.487-.326 1.556-1.96.674-2.914c-.872-.943-1.715-2.009-1.384-3.377c.167-.685.588-1.328 1.121-1.787c-.41 1.078.755 2.14 1.523 2.67c1.332.918 2.793 1.612 4.017 2.688c1.288 1.132 2.24 2.661 2.047 4.435c-.208 1.923-1.736 3.26-3.45 3.936c3.622-.8 7.365-3.61 7.44-7.627c.093-3.032-1.903-5.717-5.158-7.384c.19.48.074.697-.058.924c-.55.944-2.082 1.152-2.835.184c-1.205-1.548.025-3.216.197-4.855c.215-2.055-1.073-4.049-2.67-5.242'/%3E%3C/svg%3E");
-        background-color: currentColor;
-        -webkit-mask-image: var(--svg);
-        mask-image: var(--svg);
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-size: 100% 100%;
-        mask-size: 100% 100%;
-        color: #fff;
-        margin-left: 15px;
-      }
-    
-      .logo-tect i{
-        font-size: 3rem;
-      }
 
       .portofolio{
         height:100vh;
         width: 100%;
         background-color: #E8E8E8;
-      }
-    
-      .portofolio .teks{
+    }
+
+   
+
+    .portofolio .teks {
         padding-left: 15rem;
         padding-top: 4rem;
-      }
-    
-      .portofolio h1{
+    }
+
+    .portofolio h1 {
         font-weight: 600;
         font-size: 2.5rem;
-      } 
-      
-      .project img{
+    }
+
+    .project img {
         width: 30%;
         height: 30%;
         margin-left: 15%;
-     }
-    
-     .project .detail {
+    }
+
+    .project .detail {
         /* background-color: #070F2B; */
         margin-left: 8rem;
         margin-right: 15%;
-     }
-    
-    .detail p{
+    }
+
+    .detail p {
         font-size: 20px;
         font-weight: 500;
         line-height: 1.5rem;
         margin-left: 30px;
-     }
+    }
 
-     .detail .tombol{
-        margin-left:2.5rem ;
-     }
+    .detail .tombol {
+        margin-left: 2.5rem;
+    }
 
-     .contact .detail{
+    .contact .detail {
         margin-top: 7rem;
         padding-left: 11%;
         /* background-color:  #0ccff0; */
-     }
+    }
 
-     footer{
+    footer {
         margin-top: 12rem;
-     }
+    }
+}
+
+@media screen and (max-width:500px){
+    .about .about-pict{
+       display: none;
+    }
 }
